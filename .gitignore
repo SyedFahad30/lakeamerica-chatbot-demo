@@ -1,0 +1,17 @@
+# Secrets — never commit these
+config.env
+
+# Real patient data if you've pulled it down locally
+new-patient-intake.xlsx
+*.xlsx
+
+# Build artifacts from deploy.ps1 / deploy.sh
+build/
+function.zip
+
+# Backup files created by update-widget-endpoint.ps1/.sh
+*.bak
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lake America Family Physicians — Live Deployment Demo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Georgia', 'Times New Roman', serif; color: #26313a; background: #fff; }
+  .sans { font-family: Arial, Helvetica, sans-serif; }
+
+  .demo-banner {
+    background: #1b2f3a;
+    color: #f4ead9;
+    text-align: center;
+    padding: 10px 16px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+  }
+  .demo-banner strong { color: #d9a441; }
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    border-bottom: 3px solid #1b4b63;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .logo-block { display: flex; align-items: center; gap: 14px; }
+  .logo-badge {
+    width: 54px; height: 54px;
+    background: #1b4b63;
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .practice-name { font-size: 22px; color: #1b4b63; font-weight: bold; }
+  .practice-tagline { font-family: Arial, sans-serif; font-size: 12px; color: #6b6b63; margin-top: 2px; }
+  .top-contact { text-align: right; font-family: Arial, sans-serif; font-size: 13px; color: #444; line-height: 1.6; }
+  .top-contact .phone { color: #1b4b63; font-weight: bold; font-size: 15px; }
+
+  nav { background: #1b4b63; display: flex; justify-content: center; flex-wrap: wrap; }
+  nav a {
+    color: #f4ead9; text-decoration: none; font-family: Arial, sans-serif;
+    font-size: 13px; letter-spacing: 0.04em; padding: 14px 20px; display: inline-block;
+  }
+  nav a:hover { background: #163d51; }
+
+  .hero {
+    background: linear-gradient(rgba(27,47,58,0.55), rgba(27,47,58,0.55)),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400"><rect width="800" height="400" fill="%23cfe0e8"/></svg>');
+    background-size: cover;
+    color: #fff;
+    padding: 70px 40px;
+    text-align: center;
+  }
+  .hero h1 { font-size: 30px; font-weight: normal; margin-bottom: 12px; }
+  .hero p { font-family: Arial, sans-serif; font-size: 14px; opacity: 0.9; }
+
+  .testimonial { max-width: 700px; margin: 50px auto; text-align: center; padding: 0 20px; }
+  .testimonial p.quote { font-style: italic; font-size: 17px; color: #3a3a34; line-height: 1.6; }
+  .testimonial .link { font-family: Arial, sans-serif; font-size: 12px; color: #1b4b63; margin-top: 14px; display: block; }
+
+  .affiliation { background: #f4ead9; padding: 40px 20px; text-align: center; }
+  .affiliation h2 { font-size: 18px; color: #1b4b63; margin-bottom: 10px; font-weight: normal; }
+  .affiliation p { font-family: Arial, sans-serif; font-size: 13px; color: #555; }
+
+  .info-strip { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; padding: 45px 20px; font-family: Arial, sans-serif; }
+  .info-item { text-align: center; max-width: 220px; }
+  .info-item .label { font-size: 11px; letter-spacing: 0.1em; color: #d9a441; font-weight: bold; margin-bottom: 8px; }
+  .info-item .value { font-size: 14px; color: #26313a; line-height: 1.5; }
+
+  footer { background: #1b2f3a; color: #cfd6da; padding: 34px 40px; font-family: Arial, sans-serif; font-size: 12px; text-align: center; }
+  footer .tag { color: #d9a441; font-size: 15px; margin-bottom: 14px; letter-spacing: 0.03em; }
+  footer .links a { color: #cfd6da; text-decoration: none; margin: 0 10px; }
+  footer .links { margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<div class="demo-banner">
+  <strong>LIVE DEPLOYMENT DEMO</strong> — this page loads the real chat-widget.js, which calls your actual deployed AWS backend (API Gateway → Lambda → Anthropic + DynamoDB + SES). Not a canned/scripted preview.
+</div>
+
+<div class="topbar">
+  <div class="logo-block">
+    <div class="logo-badge">LA</div>
+    <div>
+      <div class="practice-name">Lake America Family Physicians</div>
+      <div class="practice-tagline">A Family of Doctors... For Your Family</div>
+    </div>
+  </div>
+  <div class="top-contact">
+    <div class="phone">(352) 432-3939</div>
+    <div>301 Frontage Road, Suite G, Clermont, FL 34711</div>
+    <div>Mon–Fri: 8:00 AM – 5:00 PM</div>
+  </div>
+</div>
+
+<nav>
+  <a href="#">HOME</a>
+  <a href="#">ABOUT US</a>
+  <a href="#">MEET THE TEAM</a>
+  <a href="#">PATIENT RESOURCES</a>
+  <a href="#">APPOINTMENTS</a>
+  <a href="#">CONTACT US</a>
+</nav>
+
+<div class="hero">
+  <h1>Comprehensive Family Healthcare in Clermont, Florida</h1>
+  <p class="sans">Now seeing patients in-clinic and via telemedicine.</p>
+</div>
+
+<div class="testimonial">
+  <p class="quote">"The doctors and staff are phenomenal. They took the time to answer all of my questions and showed genuine care."</p>
+  <a class="link" href="#">— See more patient testimonials</a>
+</div>
+
+<div class="affiliation">
+  <h2>Hospital Affiliation</h2>
+  <p>Proudly affiliated with South Lake Hospital, Clermont, FL</p>
+</div>
+
+<div class="info-strip">
+  <div class="info-item">
+    <div class="label">INSURANCE</div>
+    <div class="value">Medicare, BCBS, Aetna, Cigna, Florida Blue, Humana, United, and more</div>
+  </div>
+  <div class="info-item">
+    <div class="label">VISIT TYPES</div>
+    <div class="value">In-clinic appointments &amp; telemedicine visits available</div>
+  </div>
+  <div class="info-item">
+    <div class="label">NEW PATIENTS</div>
+    <div class="value">Currently accepting new patients — call to get started</div>
+  </div>
+</div>
+
+<footer>
+  <div class="tag">A FAMILY OF DOCTORS... FOR YOUR FAMILY</div>
+  <div class="links">
+    <a href="#">Home</a> · <a href="#">About Us</a> · <a href="#">Meet the Team</a> · <a href="#">Patient Resources</a> · <a href="#">Contact Us</a>
+  </div>
+  <div>301 Frontage Road, Suite G, Clermont, FL 34711 &nbsp;|&nbsp; (352) 432-3939 &nbsp;|&nbsp; Fax: (352) 432-3908</div>
+</footer>
+
+<script src="chat-widget.js"></script>
+
+</body>
+</html>
