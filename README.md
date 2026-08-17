@@ -131,9 +131,15 @@ extra call to extract structured fields when a lead is captured.
   scheduled email of the file, an internal link, syncing to their own
   OneDrive/Google Drive via a small script) — right now it lives only in S3.
 
+## Live Demo
+https://d1y2bod9a0pm5b.cloudfront.net/
+https://d1y2bod9a0pm5b.cloudfront.net/dashboard.html
+
 ## Tearing down
 
 When you're done testing/demoing:
+
+
 
 ```bash
 ./destroy.sh
