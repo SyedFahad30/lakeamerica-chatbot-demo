@@ -132,7 +132,8 @@ extra call to extract structured fields when a lead is captured.
   OneDrive/Google Drive via a small script) — right now it lives only in S3.
 
 ## Live Demo
-https://d1y2bod9a0pm5b.cloudfront.net/
+https://d1y2bod9a0pm5b.cloudfront.net
+
 https://d1y2bod9a0pm5b.cloudfront.net/dashboard.html
 
 ## Tearing down
